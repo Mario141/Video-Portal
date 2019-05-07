@@ -1,3 +1,7 @@
-<p>
-  movies works!
-</p>
+<div *ngIf="movies" class="grid-container">
+  <div *ngFor="let movie of movies" class="grid-item">
+    <img [src]="movie.image" (mouseenter)="mouseEnter(movie)" (mouseleave)="mouseLeave()">
+  </div>
+</div>
+
+<app-movie-detail [selectedMovie]="selectedMovie" [showDetails]="showDetails"></app-movie-detail>
