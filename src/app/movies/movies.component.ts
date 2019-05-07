@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import {MovieDataService} from '../movie-data.service';
 
 @Component({
   selector: 'app-movies',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  constructor() { }
+  movies;
+  selectedMovie;
+  showDetails = false;
+
+  constructor(private movieData: MovieDataService) {
+    this.movieData.getMovies().subscribe(data => {
+      this.movies = data;
+      console.log(data);
+    });
+  }
 
   ngOnInit() {
+  }
+
+  mouseEnter(movie) {
+    console.log('Mouse over: ', movie);
+    this.selectedMovie = movie;
+    this.showDetails = true;
+  }
+
+  mouseLeave() {
+    this.showDetails = false;
   }
 
 }
