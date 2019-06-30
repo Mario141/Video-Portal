@@ -7,8 +7,8 @@ import {User} from './user';
   providedIn: 'root'
 })
 export class AuthentificationService {
-  i = 0;
   users: User[];
+  redirectUrl: string;
 
   constructor(private http: HttpClient) {
     this.getUsers().subscribe(data => {

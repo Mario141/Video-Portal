@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AuthentificationService} from '../authentification.service';
 import {FormBuilder, FormControl, NgControl} from '@angular/forms';
 import {User} from '../user';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,10 +14,12 @@ export class LoginComponent implements OnInit {
   users: User[];
   checkoutForm;
   isValid = false;
-  isTrue = false;
+  isTrue = true;
+  private location: Location;
 
   constructor(private authService: AuthentificationService,
-              private formBuilder: FormBuilder) {
+              private formBuilder: FormBuilder,
+              private route: Router) {
 
     this.checkoutForm = this.formBuilder.group({
       username: '',
@@ -37,6 +40,9 @@ export class LoginComponent implements OnInit {
     const password = this.checkoutForm.get('password').value;
 
     this.isTrue = this.authService.login(username, password);
+    if (this.isTrue) {
+      this.route.navigateByUrl('/movies');
+    }
   }
 
   getUsers(): void {
