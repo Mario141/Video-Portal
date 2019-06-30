@@ -1,0 +1,35 @@
+<h3>Users!</h3>
+
+<div class="user-item" *ngFor="let user of users">
+  <span>{{isValid}}</span>
+
+  <span>{{isTrue}}</span>
+
+</div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label>Username:</label>
+    <input type="text" formControlName="username">
+  </div>
+
+  <div>
+    <label>Password:</label>
+    <input type="text" formControlName="password">
+  </div>
+
+  <button class="button" type="submit">Login</button>
+
+</form>
+
+
+
+<div *ngIf="(checkoutForm.get('username').value === 'aaa')" class="form">
+  <p>
+    Form Value: {{checkoutForm.value | json}}
+  </p>
+</div>
+
+
+
