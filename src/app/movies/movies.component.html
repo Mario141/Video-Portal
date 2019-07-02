@@ -1,6 +1,8 @@
-<div *ngIf="movies" class="grid-container">
+<div *ngIf="movies" class="grid-container" (mousedown)="emptyClick()">
   <div *ngFor="let movie of movies" class="grid-item">
-    <img [src]="movie.image" (mouseenter)="mouseEnter(movie)" (mouseleave)="mouseLeave()">
+      <a [routerLink]="['/movie-play']" [queryParams]="{movie:movie.filename}">
+      <img [src]="movie.image" (mouseenter)="mouseEnter(movie)" (mouseleave)="mouseLeave()" (mousedown)="movieClick()">
+    </a>
   </div>
 </div>
 
