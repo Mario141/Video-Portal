@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   users: User[];
   checkoutForm;
-  appTitle = 'Video Portal';
+  appTitle = 'OstfaliaTube';
 
   constructor(private authService: AuthentificationService,
               private formBuilder: FormBuilder,
