@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { MoviePlayComponent } from './movie-play/movie-play.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     MoviesComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    MoviePlayComponent
   ],
   imports: [
     BrowserModule,

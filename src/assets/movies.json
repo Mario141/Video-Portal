@@ -1,10 +1,114 @@
 [
   {
-    "name": "Braveheart",
-    "image": "https://m.media-amazon.com/images/M/MV5BMzkzMmU0YTYtOWM3My00YzBmLWI0YzctOGYyNTkwMWE5MTJkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,677,1000_AL_.jpg"
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
   },
   {
-    "name": "Titanic",
-    "image": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SY1000_CR0,0,671,1000_AL_.jpg"
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
+  },
+  {
+  "name": "Yawn",
+  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
+  "genre": "/",
+  "runtime": "00:00:05",
+  "filename": "movie1.mp4",
+  "image": "movie1.png"
+  },
+  {
+  "name": "Lets Go!",
+  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
+  "genre": "/",
+  "runtime": "00:00:13",
+  "filename": "movie2.mp4",
+  "image": "movie2.png"
   }
 ]
