@@ -7,7 +7,8 @@ import {ImpressumComponent} from './impressum/impressum.component';
 import {RecomendationComponent} from './recomendation/recomendation.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  {path: 'index', component: LoginComponent},
   {path: 'movies', component: MoviesComponent},
   {path: 'movie-play', component: MoviePlayComponent},
   {path: 'impressum', component: ImpressumComponent},

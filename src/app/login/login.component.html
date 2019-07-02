@@ -1,31 +1,21 @@
 <body>
-
-
-
-<form class="main" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<h1 class="headline">{{appTitle}}</h1>
   <div class="container">
-    <div class="right">
-
+    <div class="main" >
       <h3>Login</h3>
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 
-      <label>Username:</label>
-      <input type="text" formControlName="username"/>
+    <label>Username:</label>
+    <input type="text" formControlName="username"/>
 
-      <label>Password:</label>
-      <input type="password" formControlName="password"/>
-      <button class="button" type="submit">Login</button></div>
-
+    <label>Password:</label>
+    <input type="password" formControlName="password"/>
+    <button class="button" type="submit">Login</button>
+  </form>
+    </div>
   </div>
-
-</form>
-  <div class="information">
-    <h1 >demo user:<br> username: test<br> password: test</h1>
-  </div>
-
-
+  <h1>demo user:</h1><br> <p>username: test<br> password: test</p>
 </body>
-
-
 
 
 
