@@ -2,26 +2,30 @@
 
 
 
+<form class="main" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div class="container">
+    <div class="right">
 
-<h3>Login</h3>
+      <h3>Login</h3>
 
-<div class="container">
-  <div class="main" >
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+      <label>Username:</label>
+      <input type="text" formControlName="username"/>
 
-    <label>Username:</label>
-    <input type="text" formControlName="username"/>
+      <label>Password:</label>
+      <input type="password" formControlName="password"/>
+      <button class="button" type="submit">Login</button></div>
 
-    <label>Password:</label>
-    <input type="password" formControlName="password"/>
-  <button class="button" type="submit">Login</button>
+  </div>
 
 </form>
-</div>
-</div>
-<h1>demo user:<br> username: test<br> password: test</h1>
+  <div class="information">
+    <h1 >demo user:<br> username: test<br> password: test</h1>
+  </div>
+
 
 </body>
+
+
 
 
 
