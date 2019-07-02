@@ -8,6 +8,11 @@ import { NavComponent } from './nav/nav.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { MoviePlayComponent } from './movie-play/movie-play.component';
+import { LoginComponent } from './login/login.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { RecomendationComponent } from './recomendation/recomendation.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +20,16 @@ import { MoviePlayComponent } from './movie-play/movie-play.component';
     NavComponent,
     MoviesComponent,
     MovieDetailComponent,
-    MoviePlayComponent
+    MoviePlayComponent,
+    LoginComponent,
+    ImpressumComponent,
+    RecomendationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

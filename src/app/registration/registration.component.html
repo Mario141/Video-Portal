@@ -1,0 +1,22 @@
+<h3>Registration</h3>
+
+<div *ngFor="let user of users" class="grid-item">
+  <span>{{user.id}}</span>
+  <span>{{user.password}}</span>
+</div>
+
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm.value)">
+
+  <div>
+    <label>Username:</label>
+    <input type="text" formControlName="username">
+  </div>
+
+  <div>
+    <label>Password:</label>
+    <input type="text" formControlName="password">
+  </div>
+
+  <button class="button" type="submit">Registration</button>
+
+</form>
