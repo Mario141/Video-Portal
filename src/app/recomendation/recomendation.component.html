@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+
+<h3>Top Movies</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let movie of movies" class="col-1-4"
+   [routerLink]="['/movie-play']"[queryParams]="{movie:movie.filename}">
+
+
+    <div class="module movie">
+
+      <h4>{{movie.name}} <img width="40" height="40" [src]="movie.image" (mouseenter)="mouseEnter(movie)" (mouseleave)="mouseLeave()" (mousedown)="movieClick()"></h4>
+    </div>
+  </a>
+</div>

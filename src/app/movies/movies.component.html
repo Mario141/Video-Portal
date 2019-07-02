@@ -1,3 +1,5 @@
+<app-nav></app-nav>
+
 <div *ngIf="movies" class="grid-container" (mousedown)="emptyClick()">
   <div *ngFor="let movie of movies" class="grid-item">
       <a [routerLink]="['/movie-play']" [queryParams]="{movie:movie.filename}">
@@ -7,3 +9,4 @@
 </div>
 
 <app-movie-detail [selectedMovie]="selectedMovie" [showDetails]="showDetails"></app-movie-detail>
+

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +16,5 @@ export class MovieDataService {
   getMovies(): Observable<any> {
     return this.http.get('./assets/movies.json');
   }
+
 }
