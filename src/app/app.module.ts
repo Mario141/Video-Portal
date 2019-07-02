@@ -10,6 +10,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {RouterModule} from '@angular/router';
     NavComponent,
     MoviesComponent,
     MovieDetailComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +27,8 @@ import {RouterModule} from '@angular/router';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: '/login', pathMatch: 'full' },
-      {path: 'login', component: LoginComponent},
+      { path: '', redirectTo: '/index', pathMatch: 'full' },
+      {path: 'index', component: LoginComponent},
       {path: 'movies', component: MoviesComponent}
     ])
   ],

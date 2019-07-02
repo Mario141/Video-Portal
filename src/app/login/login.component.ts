@@ -13,9 +13,6 @@ export class LoginComponent implements OnInit {
 
   users: User[];
   checkoutForm;
-  isValid = false;
-  isTrue = true;
-  private location: Location;
 
   constructor(private authService: AuthentificationService,
               private formBuilder: FormBuilder,
@@ -28,19 +25,15 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getUsers();
   }
 
   onSubmit(loginData) {
-    // Process checkout data here
     console.warn('Your username and password have been submitted', loginData);
     // this.checkoutForm.reset();
-    this.isValid = true;
     const username = this.checkoutForm.get('username').value;
     const password = this.checkoutForm.get('password').value;
 
-    this.isTrue = this.authService.login(username, password);
-    if (this.isTrue) {
+    if (this.authService.login(username, password)) {
       this.route.navigateByUrl('/movies');
     }
   }
