@@ -94,21 +94,5 @@
   "runtime": "00:00:13",
   "filename": "movie2.mp4",
   "image": "movie2.png"
-  },
-  {
-  "name": "Yawn",
-  "description": "Big Buck Bunny kommt aus seiner Höhle und gähnt.",
-  "genre": "/",
-  "runtime": "00:00:05",
-  "filename": "movie1.mp4",
-  "image": "movie1.png"
-  },
-  {
-  "name": "Lets Go!",
-  "description": "Big Buck Bunny kommt aus seiner Höhle, gähnt und geht los.",
-  "genre": "/",
-  "runtime": "00:00:13",
-  "filename": "movie2.mp4",
-  "image": "movie2.png"
   }
 ]

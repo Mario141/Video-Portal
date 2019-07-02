@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   users: User[];
   checkoutForm;
+  appTitle = 'OstfaliaTube';
 
   constructor(private authService: AuthentificationService,
               private formBuilder: FormBuilder,
