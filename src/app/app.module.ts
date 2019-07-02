@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { MoviePlayComponent } from './movie-play/movie-play.component';
 import { LoginComponent } from './login/login.component';
-import {ReactiveFormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
-import { RegistrationComponent } from './registration/registration.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { RecomendationComponent } from './recomendation/recomendation.component';
 
 @NgModule({
   declarations: [
@@ -18,19 +20,16 @@ import { RegistrationComponent } from './registration/registration.component';
     NavComponent,
     MoviesComponent,
     MovieDetailComponent,
+    MoviePlayComponent,
     LoginComponent,
-    RegistrationComponent
+    ImpressumComponent,
+    RecomendationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', redirectTo: '/index', pathMatch: 'full' },
-      {path: 'index', component: LoginComponent},
-      {path: 'movies', component: MoviesComponent}
-    ])
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

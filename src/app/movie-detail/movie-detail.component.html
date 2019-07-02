@@ -1,7 +1,10 @@
+<hr>
 <div [ngClass]="{
   'movieDetailsContainer': showDetails,
   'hiddenContainer': !showDetails
 }">
   <b>Name: </b>{{selectedMovie.name}}<br>
-  <b>Genre: </b>
+  <b>Genre: </b>{{selectedMovie.genre}}<br>
+  <b>Laufzeit: </b>{{selectedMovie.runtime}}<br>
+  <p>{{selectedMovie.description}}</p>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {MovieDataService} from '../movie-data.service';
 
 @Component({
@@ -6,21 +6,31 @@ import {MovieDataService} from '../movie-data.service';
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.css']
 })
+
+
 export class MoviesComponent implements OnInit {
 
   movies;
   selectedMovie;
   showDetails = false;
 
-  constructor(private movieData: MovieDataService) {
+  @ViewChild('videoPlayer') videoplayer;
+
+  constructor(private movieData: MovieDataService, private elementRef: ElementRef) {
     this.movieData.getMovies().subscribe(data => {
       this.movies = data;
       console.log(data);
+
+      for (const movie of this.movies) {
+        movie.image = './assets/thumbnails/' + movie.image;
+      }
     });
   }
 
   ngOnInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#ffffff';
   }
+
 
   mouseEnter(movie) {
     console.log('Mouse over: ', movie);
@@ -31,5 +41,4 @@ export class MoviesComponent implements OnInit {
   mouseLeave() {
     this.showDetails = false;
   }
-
 }
